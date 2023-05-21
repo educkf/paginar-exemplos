@@ -25,6 +25,18 @@
 			&lt;script type="module" src="https://cdn.jsdelivr.net/gh/sabia-publisher/paginar/dist/index.es.js"&gt;&lt;/script&gt;
 		</code>
 
+		No corpo do html, no local onde deseja que seja renderizado o leitor, utilizar o Web Component conforme abaixo, dentro de um div com propriedade slot="content":
+
+		<code class="my-6 bg-gray-800 text-white font-mono p-4 rounded block">
+			&lt;paginate-content id="pagination-el" book-title="Título do livro"&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div slot="content"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Conteúdo HTML para paginar&lt;/p&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+			&lt;/paginate-content&gt;
+		</code>
+
+		<h3 class="mt-10 mb-4 font-bold text-xl">Exemplos</h3>
+
 		<p class="mb-4">Para customizações especiais, navegue pelos exemplos abaixo e inspecione o código como ele funciona.</p>
 
 		<p>

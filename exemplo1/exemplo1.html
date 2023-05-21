@@ -36,10 +36,16 @@
 		p {
 			text-indent: 2em;
 		}
+
+		#summary-menu {
+			display: none;
+		}
 	</style>
 
 	<div id="app">
-		<paginate-content id="pagination-el" book-title="Sobre a brevidade da vida">
+		<paginate-content id="pagination-el" book-title="Sobre a brevidade da vida"
+			css-string="#summary-menu{display: none}"
+		>
 			<div slot="content">
 
 				<h3>Sobre a brevidade da vida</h3>
