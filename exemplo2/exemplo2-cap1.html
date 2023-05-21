@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Slot - Paginar</title>
+</head>
+
+<body>
+
+	<style>
+		#app {
+			height: 100vh;
+		}
+
+		html {
+			--bg-light-mode: #fff7e0;
+			--bg-dark-mode: rgb(45, 45, 45);
+			--theme-primary: rgb(45, 45, 45);
+			--theme-primary-extralight: rgb(243 244 246);
+			--theme-secondary: #cd2800;
+		}
+
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			line-height: 155%;
+			margin: 0;
+		}
+
+		p {
+			text-indent: 2em;
+		}
+	</style>
+
+	<div id="app">
+		<paginate-content id="pagination-el" book-title="Sobre a brevidade da vida">
+			<div slot="header">
+				<img src="https://sabia.pub/images/logo-mobile-dark.svg" style="height: 40px">
+			</div>
+			<div slot="content">
+
+				<h3>Seneca - textos avulsos</h3>
+
+				<p>Aqui você encontrará alguns textos do filósofo Seneca. Navegue pelo sumário para cada um deles.</p>
+
+			</div>
+		</paginate-content>
+	</div>
+
+	<script>
+		const content = {
+			summary: [
+				{ title: 'Abertura', link: '/exemplo2/exemplo2-cap1.html' },
+				{ title: 'Sobre a brevidade da vida', link: '/exemplo2/exemplo2-cap2.html' },
+			],
+		}
+
+		const paginationEl = document.getElementById('pagination-el')
+		if (paginationEl) {
+			paginationEl.setAttribute("book-content", JSON.stringify(content))
+		}
+	</script>
+
+	<script type="module" src="https://cdn.jsdelivr.net/gh/sabia-publisher/paginar/dist/index.es.js"></script>
+
+</body>
+
+</html>

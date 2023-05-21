@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Slot - Paginar</title>
+</head>
+
+<body>
+
+	<style>
+		#app {
+			height: 100vh;
+		}
+
+		html {
+			--bg-light-mode: #fff7e0;
+			--bg-dark-mode: rgb(45, 45, 45);
+			--theme-primary: rgb(45, 45, 45);
+			--theme-primary-extralight: rgb(243 244 246);
+			--theme-secondary: #cd2800;
+		}
+
+		body, html {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1, h2, h3, h4, h5, h6, p {
+			line-height: 155%;
+			margin: 0;
+		}
+
+		p {
+			text-indent: 2em;
+		}
+	</style>
+
+	<div id="app">
+		<paginate-content id="pagination-el" book-title="Sobre a brevidade da vida">
+			<div slot="content">
+
+				<h3>Sobre a brevidade da vida</h3>
+				<p><strong>Autor:</strong> S&ecirc;neca</p>
+				<p>1 &ndash; 1: A maior parte dos mortais, Paulino, queixa-se da malevol&ecirc;ncia da Natureza, porque
+					estamos
+					destinados a um momento da eternidade, e, segundo eles, o espa&ccedil;o de tempo que nos foi dado
+					corre t&atilde;o
+					veloz e r&aacute;pido, de forma que, &agrave; exce&ccedil;&atilde;o de muito poucos, a vida
+					abandonaria a todos em
+					meio aos preparativos mesmos para a vida. E n&atilde;o &eacute; somente a multid&atilde;o e a turba
+					insensata que se
+					lamenta deste mal considerado universal: a mesma impress&atilde;o provocou queixas tamb&eacute;m de
+					homens ilustres.
+					Da&iacute; o protesto do maior dos m&eacute;dicos: (2) &ldquo;A vida &eacute; breve, longa, a
+					arte.&rdquo;
+					Da&iacute; o lit&iacute;gio (de nenhuma forma apropriado a um homem s&aacute;bio) que
+					Arist&oacute;teles teve com a
+					Natureza: &ldquo;aos animais, ela concedeu tanto tempo de vida, que eles sobrevivem por cinco ou dez
+					gera&ccedil;&otilde;es; ao homem, nascido para tantos e t&atilde;o grandes feitos, est&aacute;
+					estabelecido um
+					limite muito (3) mais pr&oacute;ximo.&rdquo; N&atilde;o &eacute; curto o tempo que temos, mas dele
+					muito perdemos. A
+					vida &eacute; suficientemente longa e com generosidade nos foi dada, para a realiza&ccedil;&atilde;o
+					das maiores
+					coisas, se a empregamos bem. Mas, quando ela se esvai no luxo e na indiferen&ccedil;a, quando
+					n&atilde;o a
+					empregamos em nada de bom, ent&atilde;o, finalmente constrangidos pela fatalidade, sentimos que ela
+					j&aacute; passou
+					(4) por n&oacute;s sem que tiv&eacute;ssemos percebido. O fato &eacute; o seguinte: n&atilde;o
+					recebemos uma vida
+					breve, mas a fazemos, nem somos dela carentes, mas esbanjadores. Tal como abundantes e r&eacute;gios
+					recursos,
+					quando caem nas m&atilde;os de um mau senhor, dissipam-se num momento, enquanto que, por pequenos
+					que sejam, se
+					s&atilde;o confiados a um bom guarda, crescem pelo uso, assim tamb&eacute;m nossa vida se estende
+					por muito tempo,
+					para aquele que sabe dela bem dispor.</p>
+				<p>2 &ndash; 1: Por que nos queixamos da Natureza? Ela mostrou-se benevolente: a vida, se souberes
+					utiliz&aacute;-la, longa. Mas uma avareza insaci&aacute;vel apossa-se de, um de outro, uma laboriosa
+					dedica&ccedil;&atilde;o a
+					atividades in&uacute;teis, um embriaga-se de vinho, outro entorpece-se na inatividade; a este, uma
+					ambi&ccedil;&atilde;o sempre dependente das opini&otilde;es alheias o esgota, um incontido desejo de
+					comerciar leva
+					aquele a percorrer todas as terras e todos os mares, na esperan&ccedil;a de lucro; a paix&atilde;o
+					pelos assuntos
+					militares atormenta alguns, sempre preocupados com perigos alheios ou inquietos com seus
+					pr&oacute;prios; h&aacute;
+					os que, por uma servid&atilde;o volunt&aacute;ria, se desgastam numa ingrata solicitude a seus
+					superiores; (2) a
+					busca da beleza de um outro ou o cuidado com sua pr&oacute;pria ocupa a muitos; a maioria, que
+					n&atilde;o persegue
+					nenhum objetivo fixo, atirada a novos des&iacute;gnios por uma vaga e inconstante leviandade, desgostando-se com isso;
+					alguns n&atilde;o
+					definiram para onde dirigir sua vida, e o destino surpreende-os esgotados e bocejantes, de tal forma
+					que n&atilde;o
+					duvido ser verdadeiro o que disse, &agrave; maneira de or&aacute;culo, o maior dos poetas:
+					&ldquo;Pequena &eacute; a
+					parte da vida que (3) vivemos.&rdquo; Pois todo o restante n&atilde;o &eacute; vida, mas tempo. Os
+					v&iacute;cios
+					atacam-nos, e rodeiam-nos de todos os lados e n&atilde;o permitem que nos reergamos, nem que os
+					olhos se voltem para
+					discernir a verdade<strong>, </strong>mantendo-os submersos, pregados &agrave;s paix&otilde;es.
+					Nunca &eacute;
+					permitido &agrave;s suas v&iacute;timas voltar a si: se por acaso acontecer de encontrarem alguma
+					tr&eacute;gua,
+					ainda assim, tal como no fundo do mar, no qual, mesmo ap&oacute;s a tempestade, ainda h&aacute;
+					agita&ccedil;&atilde;o, eles ainda assim s&atilde;o o joguete das paix&otilde;es, e nenhum repouso
+					(4) lhes &eacute;
+					concedido. Pensas que falo daqueles cujos v&iacute;cios s&atilde;o declarados? V&ecirc; aqueles cuja
+					fortuna faz
+					acorrer a multid&atilde;o: s&atilde;o sufocados pelos seus bens. A quantos as riquezas n&atilde;o
+					s&atilde;o um
+					peso!</p>
+				<p>Quantos n&atilde;o verteram seu sangue por causa de sua eloq&uuml;&ecirc;ncia e da presteza
+					di&aacute;ria com que
+					exibiam seus talentos! Quantos n&atilde;o est&atilde;o p&aacute;lidos por causa de seus
+					cont&iacute;nuos prazeres! A
+					quantos a vasta multid&atilde;o de clientes n&atilde;o d&aacute; nenhuma liberdade! Passa os olhos
+					por todos, desde
+					os mais pequenos at&eacute; os mais poderosos: este advoga, aquele assiste, um &eacute; acusado,
+					outro defende, e um
+					outro ainda julga ningu&eacute;m reivindica nada para si, todos consomem mutuamente suas vidas. Pergunta por aqueles
+					cujos nomes se
+					aprendem de cor e ver&aacute;s que eles s&atilde;o identificados pelas caracter&iacute;sticas
+					seguintes: este servidor daquele, que o &eacute; de um outro &ndash; ningu&eacute;m pertence a si pr&oacute;prio. (5)
+					E, portanto,
+					&eacute; o c&uacute;mulo da insensatez, a indigna&ccedil;&atilde;o de alguns: queixam-se do
+					desd&eacute;m de seus
+					superiores, porque estes n&atilde;o tiveram tempo de ir ter com eles quando o desejavam. Quem
+					ousar&aacute;
+					queixar-se da soberba de um outro, quando ele mesmo n&atilde;o tem um momento livre para si
+					pr&oacute;prio? E
+					aquele, contudo, apesar de seu aspecto insolente, olhou-te uma vez com considera&ccedil;&atilde;o,
+					sem saber quem
+					eras, prestou aten&ccedil;&atilde;o &agrave;s tuas palavras e mesmo recebeu-te junto de si; tu
+					n&atilde;o te
+					dignaste a considerar nem a ti mesmo. Portanto n&atilde;o h&aacute; raz&atilde;o para pedires contas
+					de teus favores
+					a quem quer que seja, uma vez que, quando os fizeste, n&atilde;o desejavas estar com um outro, mas
+					n&atilde;o podias
+					estar contigo.</p>
+				<p>3 &ndash; 1: Todos os esp&iacute;ritos que alguma vez brilharam consentir&atilde;o neste &uacute;nico
+					ponto: jamais
+					se cansar&atilde;o de se espantar com a cegueira das mentes humanas. N&atilde;o se suporta que as
+					propriedades sejam
+					invadidas por ningu&eacute;m, e, se houver uma pequena disc&oacute;rdia quanto &agrave; medida de
+					seus limites, os
+					homens recorrem a pedras e armas; no entanto, permitem que outros se intrometam em suas vidas, a
+					ponto de eles
+					pr&oacute;prios induzirem seus futuros possessores; n&atilde;o se encontra ningu&eacute;m que queira
+					dividir seu
+					dinheiro, mas a vida, entre quantos cada um a distribui! S&atilde;o avaros em preservar seu
+					patrim&ocirc;nio,
+					enquanto, quando se trata de desperdi&ccedil;ar o tempo, s&atilde;o muito pr&oacute;digos com
+					rela&ccedil;&atilde;o
+					&agrave; &uacute;nica (2) coisa em que a avareza &eacute; justificada. Por isso, agrada-me
+					interrogar um qualquer,
+					dentre a multid&atilde;o dos mais velhos:</p>
+				<p>&ldquo;Vemos que chegaste ao fim da vida, contas j&aacute; cem ou mais anos. Vamos! Faz o
+					c&ocirc;mputo de tua
+					exist&ecirc;ncia. Calcula quanto deste tempo credor, amante, superior ou cliente, te subtraiu e
+					quanto ainda as
+					querelas conjugais, as reprimendas aos escravos, as atarefadas perambula&ccedil;&otilde;es pela
+					cidade; acrescenta
+					as doen&ccedil;as que n&oacute;s pr&oacute;prios nos causamos e tamb&eacute;m todo o tempo perdido:
+					ver&aacute;s que
+					tens menos anos de vida (3) do que contas. Faz um esfor&ccedil;o de mem&oacute;ria: quando tiveste
+					uma
+					resolu&ccedil;&atilde;o seguida? Qu&atilde;o poucas vezes um dia qualquer decorreu como planejaras!
+					Quando
+					empregaste teu tempo contigo mesmo?</p>
+				<p>Quando mantiveste a apar&ecirc;ncia imperturb&aacute;vel, o &acirc;nimo intr&eacute;pido? Quantas
+					obras fizeste para
+					ti pr&oacute;prio?</p>
+				<p>Quantos n&atilde;o ter&atilde;o esbanjado tua vida, sem que percebesses o que estavas perdendo; o
+					quanto de tua vida
+					n&atilde;o subtra&iacute;ram sofrimentos desnecess&aacute;rios, tolos contentamentos, &aacute;vidas
+					paix&otilde;es,
+					in&uacute;teis conversa&ccedil;&otilde;es, e qu&atilde;o pouco n&atilde;o te restou do que era teu!
+					Compreendes que
+					morres (4) prematuramente.&rdquo; Qual &eacute; pois o motivo? Vivestes como se f&oacute;sseis viver para
+					sempre, nunca vos
+					ocorreu que sois fr&aacute;geis, n&atilde;o notais quanto tempo j&aacute; passou; v&oacute;s o
+					perdeis, como se ele
+					fosse farto e abundante, ao passo que aquele mesmo dia que &eacute; dado ao servi&ccedil;o de outro
+					homem ou outra
+					coisa seja o &uacute;ltimo. Como mortais, vos aterrorizais de tudo, mas desejais tudo como se
+					f&ocirc;sseis (5)
+					imortais. Ouvir&aacute;s muitos dizerem: &ldquo;Aos cinq&uuml;enta anos me refugiarei no
+					&oacute;cio, aos sessenta
+					estarei livre de meus encargos.&rdquo; E que fiador tens de uma vida t&atilde;o longa? E quem
+					garantir&aacute; que
+					tudo ir&aacute; conforme planejas? N&atilde;o te envergonhas de reservar para ti apenas as sobras da
+					vida e destinar
+					&agrave; medita&ccedil;&atilde;o somente a idade que j&aacute; n&atilde;o serve mais para nada?
+					Qu&atilde;o tarde
+					come&ccedil;as a viver, quando j&aacute; &eacute; hora de deixar de faz&ecirc;-lo. Que
+					neglig&ecirc;ncia t&atilde;o
+					louca a dos mortais, de adiar para o q&uuml;inquag&eacute;simo ou sexag&eacute;simo ano os prudentes
+					ju&iacute;zos,
+					e a partir deste ponto, ao qual poucos chegaram, querer come&ccedil;ar a viver!</p>
+				<p>4 &ndash; 1: Ver&aacute;s os homens mais poderosos, e elevados aos mais altos postos, deixar escapar
+					palavras nas
+					quais desejam e louvam o &oacute;cio e o preferem a todos os seus bens. Por um momento desejam
+					abdicar daquela sua
+					proemin&ecirc;ncia, se for poss&iacute;vel faz&ecirc;-lo em seguran&ccedil;a, pois ainda que nada
+					venha do exterior
+					assalt&aacute;-la ou abal&aacute;-la, (2) por si s&oacute; a fortuna se desfaz. O divino Augusto, a
+					quem os deuses,
+					mais do que a qualquer outro mortal, favoreceram, nunca deixou de almejar repouso para si
+					pr&oacute;prio e desejar
+					folga dos assuntos p&uacute;blicos; todas as suas falas voltavam sempre ao mesmo ponto: a
+					esperan&ccedil;a de
+					&oacute;cio. Isto distraia suas penas com o seguinte consolo, fingido, contudo doce: um dia haveria
+					(3) de viver
+					para si mesmo. Em certa carta endere&ccedil;ada ao Senado, como prometesse que seu repouso
+					n&atilde;o haveria de ser
+					desprovido de dignidade e seria condizente com sua gl&oacute;ria passada, encontrei essas palavras:
+					&ldquo;&Eacute;
+					por&eacute;m mais ilus&oacute;rio que essas coisas se realizem do que podem ser prometidas. Contudo
+					o desejo daquele
+					tempo, que tanto ambiciono, me anima de tal forma, que antecipo algo do desejado pela do&ccedil;ura
+					das palavras (4)
+					pronunciadas, ainda que tarde seu deleite.&rdquo; O &oacute;cio era uma coisa t&atilde;o almejada,
+					que, por
+					n&atilde;o poder dele usufruir, antecipava-o em pensamento. Ele, que via todas as coisas dependerem
+					unicamente de
+					si, que decidia a sorte dos homens e das na&ccedil;&otilde;es, com muita satisfa&ccedil;&atilde;o
+					pensava no dia em
+					que se despojaria de sua grandeza. (5) Estava ciente de quanto suor exigiam aqueles bens que
+					brilhavam por todas as
+					terras, de quantas inquieta&ccedil;&otilde;es reprimidas eles ocultavam: for&ccedil;ado
+					primeiramente a combater os
+					cidad&atilde;os, depois os amigos, e finalmente os mais pr&oacute;ximos de si, em mar e em terra fez
+					correr sangue.
+					Tendo levado a guerra &agrave; Maced&ocirc;nia, Sic&iacute;lia, Egito, &Aacute;sia e a quase todas
+					as costas,
+					dirigiu os ex&eacute;rcitos j&aacute; cansados de oprimir romanos &agrave;s guerras externas. Enquanto pacifica os Alpes e subjuga inimigos
+					infiltrados em
+					meio &agrave; paz do Imp&eacute;rio e estende as fronteiras para al&eacute;m do Reno, do Eufrates e
+					do
+					Dan&uacute;bio, na pr&oacute;pria Roma contra ele se voltavam os punhais de Murena, Cepi&atilde;o,
+					L&eacute;pido,
+					Egn&aacute;cio e de tantos outros. (6) Ainda n&atilde;o havia escapado das armadilhas destes, e sua
+					filha e muitos
+					jovens nobres entregavam-se ao adult&eacute;rio, como se isso fosse um sacramento, atormentando
+					dessa forma sua
+					velhice; e ainda havia uma segunda e tem&iacute;vel uni&atilde;o de uma certa mulher a um
+					Ant&ocirc;nio. Ele
+					arrancava esses males com suas pr&oacute;prias m&atilde;os, e outros, latentes, irrompiam; tal como
+					num corpo ferido
+					e sangrando, uma outra parte qualquer sempre se rompia. Por isso desejava o &oacute;cio; todos os
+					seus labores
+					residiam nessa esperan&ccedil;a e pensamento: tal era o desejo daquele que podia satisfazer todos os
+					desejos. 5
+					&ndash; 1: Marco C&iacute;cero, atirado entre homens como Catilina, Cl&oacute;dio, Pompeu e Crasso,
+					uns, manifestos
+					inimigos, outros, d&uacute;bios amigos, enquanto oscilava com a Rep&uacute;blica e procurava
+					sustent&aacute;-la no
+					seu naufr&aacute;gio, at&eacute; finalmente afundar com ela, sempre inquieto na prosperidade e
+					impaciente na
+					adversidade, quantas vezes n&atilde;o amaldi&ccedil;oou seu pr&oacute;prio consulado, que era
+					louvado (2) n&atilde;o
+					sem motivo, mas sem modera&ccedil;&atilde;o. Que coisas lament&aacute;veis ele diz numa carta a
+					&Aacute;tico, na
+					&eacute;poca em que Pompeu, o Pai, j&aacute; havia sido vencido, e seu filho restaurava na Espanha
+					as armas
+					despeda&ccedil;adas! &ldquo;Perguntas-me o que fa&ccedil;o aqui?&rdquo;</p>
+				<p>&ndash; diz ele. &ldquo;Semi-livre, quedo-me em minha vila de T&uacute;sculo.&rdquo; Ainda acrescenta
+					muitas outras
+					palavras, nas quais lamenta a vida passada, queixa-se do presente e desespera-se do futuro.
+					C&iacute;cero se diz
+					semi-livre mas, por J&uacute;piter!, nunca o s&aacute;bio recorrer&aacute; a um termo t&atilde;o
+					baixo, nunca
+					ser&aacute; semi-livre, mas ser&aacute; um homem de &iacute;ntegra e s&oacute;lida liberdade,
+					desapegado, senhor de
+					si e bem acima dos demais. Pois quem pode estar acima daquele que est&aacute; acima da Fortuna?</p>
+				<p>6 &ndash; 1: Diz-se que L&iacute;vio Druso, homem violento e arrebatador, ap&oacute;s ter dado curso
+					a novas leis e
+					&agrave;s m&aacute;s medidas dos Gracos, com o apoio de uma vasta multid&atilde;o de toda a
+					It&aacute;lia,
+					n&atilde;o vendo uma sa&iacute;da para sua pol&iacute;tica, que j&aacute; n&atilde;o mais podia
+					levar adiante, nem,
+					uma vez precipitada, abandonar, amaldi&ccedil;oou sua vida agitada desde o princ&iacute;pio e
+					declarou nunca ter
+					tido f&eacute;rias, nem mesmo quando menino. Com efeito, adolescente ainda, trajando a toga
+					pretexta, ousou fazer
+					recomenda&ccedil;&otilde;es sobre os r&eacute;us aos Ju&iacute;zes e fazer prevalecer t&atilde;o
+					eficazmente sua
+					opini&atilde;o no f&oacute;rum, que &eacute; tido como certo que algumas causas foram por ele
+					arrebatadas. (2) Em
+					que n&atilde;o haveria de dar uma ambi&ccedil;&atilde;o t&atilde;o prematura? Poder-se-ia imaginar
+					que uma
+					aud&aacute;cia t&atilde;o precoce haveria de resultar em fonte de grande preju&iacute;zo
+					p&uacute;blico e
+					particular. E, portanto, era tarde para se queixar de nunca ter tido f&eacute;rias, ele que, desde
+					crian&ccedil;a,
+					j&aacute; era um perturbador e um elemento nocivo ao f&oacute;rum. Discute-se se ele teria se
+					suicidado, pois
+					sucumbiu de um ferimento recebido na virilha; h&aacute; quem duvide se sua morte foi
+					volunt&aacute;ria, mas
+					ningu&eacute;m, de (3) que foi oportuna. Seria sup&eacute;rfluo mencionar os que, embora
+					pare&ccedil;am aos outros
+					os mais felizes dos homens, declaram eles pr&oacute;prios que na verdade odeiam todas as
+					a&ccedil;&otilde;es de suas
+					vidas, mas com essas declara&ccedil;&otilde;es n&atilde;o mudaram nem a si pr&oacute;prios nem aos
+					outros, pois mal
+					pronunciavam essas palavras e as paix&otilde;es faziam-nos (4) recair em seus h&aacute;bitos. Mas,
+					por
+					J&uacute;piter!, uma vida como a vossa, mesmo que dure mais de mil anos, ser&aacute; sempre
+					determinada pelos mais
+					estreitos limites: estes v&iacute;cios podem devorar s&eacute;culos e s&eacute;culos. O</p>
+				<p>espa&ccedil;o de tempo que temos, a raz&atilde;o pode na verdade dilat&aacute;-lo; e, embora a
+					Natureza fa&ccedil;a-o
+					correr, necessariamente ele vos escapar&aacute;, pois que n&atilde;o vos apossais dele, nem o
+					retendes ou fazeis
+					demorar a mais fugidia de todas as coisas, mas deixais que se perca como se fosse, uma coisa
+					sup&eacute;rflua e
+					substitu&iacute;vel.</p>
+				<p>7 &ndash; 1: Conto entre os piores os que nunca est&atilde;o dispon&iacute;veis para nada,
+					sen&atilde;o para o vinho
+					e os prazeres sensuais, pois n&atilde;o h&aacute; ocupa&ccedil;&atilde;o mais vergonhosa. Outros,
+					embora se prendam
+					&agrave; imagem vazia da gl&oacute;ria, contudo erram honradamente; podes me enumerar os avarentos,
+					os turbulentos,
+					ou os que se entregam a &oacute;dios e guerras injustas: todos estes pecam de uma maneira mais
+					viril. Mas os que se
+					entregam &agrave; gula e aos prazeres sensuais ostentam uma degrada&ccedil;&atilde;o (2) desonrosa.
+					Examina todo o
+					tempo deles: verifica quanto gastam em c&aacute;lculos avaros, quanto em preparar emboscadas, quanto
+					temendo-as,
+					quanto</p>
+				<p>bajulando, quanto sendo bajulados; e quanto tempo ocupam em compromissos judici&aacute;rios, seus ou
+					alheios, ou com
+					banquetes &ndash; que j&aacute; se tornaram mesmo uma obriga&ccedil;&atilde;o: ver&aacute;s que nem
+					seus bens, nem
+					seus males, os deixam respirar. (3) Finalmente, todos concordam que um homem ocupado n&atilde;o pode
+					fazer nada bem:
+					n&atilde;o pode se dedicar &agrave; eloq&uuml;&ecirc;ncia, nem aos estudos liberais, uma vez que seu
+					esp&iacute;rito, ocupado em coisas diversas, n&atilde;o se aprofunda em nada, mas, pelo
+					contr&aacute;rio, tudo
+					rejeita, pensando que tudo lhe &eacute; imposto. Nada &eacute; menos pr&oacute;prio do homem ocupado
+					do que viver,
+					pois n&atilde;o h&aacute; outra coisa que seja mais dif&iacute;cil de aprender. Professores das
+					outras artes,
+					h&aacute; v&aacute;rios e por toda parte, dentre algumas dessas, vemos crian&ccedil;as terem
+					atingido tanta
+					maestria, que chegam at&eacute; a ensin&aacute;-las. Deve-se aprender a viver por toda a vida, e,
+					por mais que tu
+					talvez te espantes, a vida (4) toda &eacute; um aprender a morrer. Muitos dos maiores homens, tendo
+					afastado todos
+					os obst&aacute;culos e renunciado &agrave;s riquezas, a seus neg&oacute;cios e aos prazeres,
+					empregaram at&eacute; o
+					&uacute;ltimo de seus dias para aprender a viver, contudo muitos deles deixaram a vida tendo
+					confessado ainda
+					n&atilde;o sab&ecirc;-lo &ndash; e muito menos ainda (5) o sabem os que mencionei acima. Creia-me,
+					&eacute;
+					pr&oacute;prio de um grande homem e de quem se eleva acima dos erros</p>
+				<p>humanos, n&atilde;o consentir que lhe tomem um instante sequer da vida, e assim toda sua vida
+					&eacute; muito longa,
+					uma vez que se dedicou todo a si pr&oacute;prio, n&atilde;o importa quanto ela tenha durado. Nem um
+					instante dela
+					permaneceu descuidado ou ocioso, ou esteve subordinado a um outro e, portanto, ele, seu guarda
+					parcimonioso,
+					n&atilde;o encontrar&aacute; ningu&eacute;m que julgue ter vivido dignamente a ponto de querer
+					trocar sua vida com a
+					dele. Portanto, a este seu tempo foi suficiente, mas &agrave;queles que tiveram muito de sua vida
+					subtra&iacute;do
+					(6) pelo povo, ela necessariamente faltou. E nem por isso h&aacute; motivo para pensares que eles
+					&agrave;s vezes
+					n&atilde;o compreendem seu erro. Certamente ouvir&aacute;s muitos dos que s&atilde;o esmagados por
+					sua grande
+					prosperidade, vez por outra, exclamar de entre a multid&atilde;o de clientes, ou de seus processos
+					jur&iacute;dicos,
+					ou de outras honor&iacute;ficas mis&eacute;rias: &ldquo;N&atilde;o me deixam viver!&rdquo; E
+					haveriam de (7) deixar?
+					Todos os que te reclamam para si te afastam de tuas ocupa&ccedil;&otilde;es. Quantos dias te tomou
+					aquele
+					r&eacute;u? E aquele candidato?</p>
+				<p>E a velha, j&aacute; cansada de enterrar herdeiros? E aquele que finge ser doente para excitar a
+					cobi&ccedil;a dos
+					ca&ccedil;adores de testamentos? E aquele amigo poderoso, que te mant&eacute;m, n&atilde;o em sua
+					amizade, mas em
+					seu cortejo? Faz o c&ocirc;mputo dos dias de tua vida: ver&aacute;s que restaram muito poucos dias
+					para ti mesmo.
+					(8) Tendo aquele obtido os cargos com que tanto sonhava, deseja abandon&aacute;-los e repete
+					incessantemente:</p>
+				<p>&ldquo;Quando este ano passar&aacute;?&rdquo; Outro proporciona espet&aacute;culos p&uacute;blicos,
+					que tanto desejou
+					que lhe fossem cabidos por sorte, e agora diz: &ldquo;quando me livrarei deles?&rdquo; Disputa-se
+					tanto para ouvir
+					aquele advogado, que ele enche de uma grande multid&atilde;o todo o f&oacute;rum, at&eacute; para
+					al&eacute;m de
+					onde pode ser ouvido. &ldquo;Quando&rdquo; &ndash;</p>
+				<p>diz ele &ndash; &ldquo;me livrarei disto?&rdquo; Cada um faz precipitar sua vida e (9) padece da
+					&acirc;nsia do
+					futuro e de t&eacute;dio do presente. Mas o que emprega todo o tempo consigo pr&oacute;prio, que
+					ordena cada dia
+					como se fosse uma vida, nem deseja o amanh&atilde;, nem o teme. Pois que novo prazer h&aacute;, que
+					qualquer hora
+					lhe possa imediatamente trazer? Tudo lhe &eacute; conhecido, tudo foi desfrutado at&eacute; a
+					saciedade. Do resto,
+					que a Fortuna disponha como queira: a vida j&aacute; lhe foi assegurada. Nada se lhe pode adicionar
+					ou arrebatar, e,
+					mesmo que algo se acrescente a ela, seria como se alimentassem algu&eacute;m j&aacute; farto de
+					alimentos quaisquer:
+					estar&aacute;</p>
+				<p>recebendo algo que nem mais (10) deseja. Portanto n&atilde;o h&aacute; por que pensar que
+					algu&eacute;m tenha vivido
+					muito, por causa de suas rugas ou cabelos brancos: ele n&atilde;o viveu por muito tempo,
+					simplesmente foi por muito
+					tempo. Pensarias ter navegado muito, aquele que, tendo se afastado do porto, foi apanhado por
+					violenta tempestade,
+					errou para c&aacute; e para l&aacute; e ficou a dar voltas, conforme a mudan&ccedil;a dos ventos e o
+					capricho dos
+					furac&otilde;es, sem contudo sair do lugar? Ele n&atilde;o navegou muito, mas foi muito acossado. 8
+					&ndash; 1:
+					Costumo estranhar quando vejo alguns pedindo tempo, e aqueles a quem se pede mostrarem-se muito
+					complacentes; ambos
+					consideram aquilo pelo que se pede tempo, nenhum, o tempo mesmo:</p>
+				<p>parece que nada se pede e que nada &eacute; dado. Brinca-se com a coisa mais preciosa de todas;
+					contudo ela lhes
+					escapa sem que percebam, pois &eacute; um incorporal e algo que n&atilde;o salta aos olhos, por isso considerado muito desprez&iacute;vel, e em raz&atilde;o disto n&atilde;o lhes atribuem valor algum.
+					(2) Os homens
+					recebem pens&otilde;es e alugu&eacute;is com muito prazer e concentram neles suas
+					preocupa&ccedil;&otilde;es,
+					esfor&ccedil;os e cuidados, mas ningu&eacute;m d&aacute; valor ao tempo; usa-se dele a r&eacute;deas
+					soltas, como se
+					nada custasse. Por&eacute;m, quando doentes, se est&atilde;o pr&oacute;ximos do perigo de morte,
+					prostram-se aos
+					joelhos dos m&eacute;dicos; ou, se temem a pena capital, est&atilde;o prontos a gastar todos os seus
+					bens para
+					viver. Tamanha &eacute; a disc&oacute;rdia de seus (3) sentimentos! Se fosse poss&iacute;vel
+					apresentar a cada um a
+					conta dos anos futuros, da mesma forma que podemos fazer com os passados, como tremeriam aqueles que
+					vissem
+					restar-lhes poucos anos e como os poupariam! Pois, se &eacute; f&aacute;cil administrar o que,
+					embora curto,
+					&eacute; certo, deve-se conservar com muito cuidado o que n&atilde;o se pode saber (4) quando
+					h&aacute; de acabar.
+					Contudo n&atilde;o h&aacute; por que pensar que eles ignoram que coisa preciosa &eacute; o tempo:
+					costumam dizer aos
+					que amam muit&iacute;ssimo que est&atilde;o dispostos a lhes dar parte de seus dias. E realmente
+					d&atilde;o, sem se
+					aperceberem disto, mas d&atilde;o de forma a subtra&iacute;rem v&aacute;rios anos a si, sem aumentar
+					os daqueles.
+					Mas ignoram o fato mesmo de estarem perdendo seus anos, por isso lhes &eacute; toler&aacute;vel a
+					perda de um bem
+					que n&atilde;o &eacute; (5) notado. Ningu&eacute;m devolver&aacute; teus anos, ningu&eacute;m te
+					far&aacute; voltar
+					a ti mesmo. Uma vez principiada, a vida segue seu curso e n&atilde;o reverter&aacute; nem o
+					interromper&aacute;,
+					n&atilde;o se elevar&aacute;, n&atilde;o te avisar&aacute; de sua velocidade. Transcorrer&aacute;
+					silenciosamente,
+					n&atilde;o se prolongar&aacute; por ordem de um rei, nem pelo apoio do povo. Correr&aacute; tal como
+					foi
+					impulsionada no primeiro dia, nunca desviar&aacute; seu curso, nem o retardar&aacute;. Que
+					suceder&aacute;? Tu
+					est&aacute;s ocupado, e a vida se apressa; por sua vez vir&aacute; a morte, &agrave; qual
+					dever&aacute;s te
+					entregar, queiras ou n&atilde;o.</p>
+				<p>9 &ndash; 1: Pode haver algo mais est&uacute;pido que o modo de ver de alguns &ndash; falo daqueles
+					que deixam de
+					lado a prud&ecirc;ncia. Ocupam-se para poder viver melhor: armazenam a vida, gastando-a! Fazem seus
+					planos a longo
+					prazo; no entanto protelar &eacute; do maior preju&iacute;zo para a vida: arrebata-nos cada dia que
+					se oferece a
+					n&oacute;s, rouba-nos o presente ao prometer o futuro. O maior impedimento para viver &eacute; a
+					expectativa, a qual
+					tende para o amanh&atilde; e faz perder o momento presente. Do que est&aacute; nas m&atilde;os da
+					Fortuna,
+					disp&otilde;es; o que est&aacute; nas tuas, despedes. Para onde ficas a olhar? Para que tendes? Tudo
+					que est&aacute;
+					por vir se assenta na incerteza: desde (2) j&aacute;, vive! Proclama o maior dos poetas e, como
+					inspirado por
+					divinos l&aacute;bios, canta este canto de salva&ccedil;&atilde;o: &ldquo;Os melhores dias da vida
+					dos tristes
+					mortais S&atilde;o os primeiros a fugir.&rdquo; &ldquo;Por que hesitar?&rdquo; &ndash; diz ele
+					&ndash; &ldquo;por
+					que ficar sem nada fazer? Se n&atilde;o ocupares o dia, ele fugir&aacute;&rdquo; E, contudo, se o
+					tiveres ocupado,
+					ainda fugir&aacute;; portanto deve-se lutar contra a celeridade do tempo usando de velocidade, tal
+					como se deve
+					beber depressa de uma (3) corrente r&aacute;pida e que n&atilde;o fluir&aacute; para sempre. O poeta
+					emprega
+					magnificamente as palavras para censurar a infinita contemporiza&ccedil;&atilde;o, pois diz &ldquo;o
+					melhor
+					dia&rdquo;, e n&atilde;o &ldquo;a melhor idade&rdquo;. Como &eacute; que tu, seguro e demorado em
+					meio a uma
+					t&atilde;o grande fuga de tempo, disp&otilde;es para ti os meses e os anos, numa longa s&eacute;rie,
+					de acordo com
+					tua avidez? O poeta fala do dia, e deste (4) mesmo dia que est&aacute; fugindo. Acaso se duvida que
+					os melhores dias
+					fujam primeiro aos m&iacute;seros mortais, isto &eacute;, aos ocupados? A velhice oprime tanto seus
+					esp&iacute;ritos
+					pueris que chegam a ela surpresos e desarmados, pois nada em sua vida foi previsto: bruscamente e
+					desprevenidos nela
+					ca&iacute;ram; n&atilde;o a sentiam chegar (5) diariamente. Tal como uma conversa ou uma leitura ou
+					alguma
+					reflex&atilde;o mais s&eacute;ria distrai os viajantes, que se v&ecirc;em chegados ao destino sem
+					notar que dele se
+					aproximavam, assim esta cont&iacute;nua e t&atilde;o r&aacute;pida caminhada da vida, que dormindo
+					ou acordados
+					fazemos no mesmo passo, aos ocupados n&atilde;o aparece sen&atilde;o no fim.</p>
+				<p>10 &ndash; 1: Quisesse eu dividir minha tese em t&oacute;picos e argumentos, ocorrer-me-iam muitos
+					exemplos, pelos
+					quais provaria que &eacute; muito breve a vida dos ocupados. Costumava dizer Fabiano, que n&atilde;o
+					era um desses
+					fil&oacute;sofos acad&ecirc;micos, mas um dos verdadeiros e antigos: &ldquo;contra as paix&otilde;es
+					deve-se lutar
+					com arrojo, n&atilde;o com sutilezas; e deve-se romper a linha de batalha com um grande assalto,
+					n&atilde;o com
+					t&iacute;midas tentativas.&rdquo;</p>
+				<p>N&atilde;o aprovava sofismas: &ldquo;pois devemos vencer as paix&otilde;es, n&atilde;o
+					espica&ccedil;&aacute;-las&rdquo;. Contudo, para demonstrar &agrave;s suas v&iacute;timas seu
+					desvario, devemos
+					instru&iacute;-las, n&atilde;o lament&aacute;-las. (2) A vida divide-se em tr&ecirc;s
+					per&iacute;odos: o que foi, o
+					que &eacute;, e o que h&aacute; de ser. Destes, o que vivemos &eacute; breve; o que havemos de
+					viver, duvidoso; o
+					que j&aacute; vivemos, certo. Pois, sobre este &uacute;ltimo, a Fortuna perdeu os direitos: (3)
+					&eacute; o que
+					n&atilde;o se submete ao arb&iacute;trio de ningu&eacute;m. Eis o que escapa aos ocupados, pois eles
+					n&atilde;o
+					t&ecirc;m tempo para reconsiderar o passado e, mesmo se tivessem, ser-lhes-ia desagrad&aacute;vel a
+					recorda&ccedil;&atilde;o de uma coisa da qual se arrependem. Portanto &eacute; a contragosto que
+					voltam seus
+					pensamentos ao tempo mal empregado e n&atilde;o ousam reviver aquelas horas, cujos v&iacute;cios,
+					embora estivessem
+					dissimulados pelo atrativo de um prazer moment&acirc;neo, (4) desvendam-se com a
+					recorda&ccedil;&atilde;o.
+					Ningu&eacute;m se voltar&aacute; de bom grado ao passado, exceto aquele cujas a&ccedil;&otilde;es
+					est&atilde;o todas
+					submetidas &agrave; censura de sua consci&ecirc;ncia, que nunca se engana. Aquele que ambiciosamente
+					muitas coisas
+					cobi&ccedil;ou, orgulhosamente desprezou, insolentemente venceu,</p>
+				<p>trai&ccedil;oeiramente enganou, desonestamente roubou e prodigamente dissipou seus bens,
+					necessariamente ter&aacute;
+					que temer suas pr&oacute;prias recorda&ccedil;&otilde;es. Ora, de nossa vida, esta &eacute; a parte
+					inviol&aacute;vel e j&aacute; consagrada, que est&aacute; acima de todas as vicissitudes humanas,
+					que foi
+					subtra&iacute;da ao imp&eacute;rio da Fortuna e que n&atilde;o pode ser afetada pela pobreza, nem
+					pelo medo, nem
+					pelo ass&eacute;dio das doen&ccedil;as. N&atilde;o se pode perturb&aacute;-la ou roub&aacute;-la de
+					seu possessor,
+					pois sua posse &eacute; perp&eacute;tua e livre de receios. Os dias apresentam-se a n&oacute;s um a
+					um e momento por
+					momento, entretanto todos os dias do passado se apresentar&atilde;o a n&oacute;s quando ordenarmos,
+					e
+					consentir&atilde;o em ser apropriados e examinados &agrave; vontade &ndash; coisa que os ocupados
+					n&atilde;o
+					t&ecirc;m (5) tempo de fazer. &Eacute; pr&oacute;prio de uma mente segura de si e sossegada poder
+					percorrer todas as
+					&eacute;pocas de sua vida; mas o esp&iacute;rito dos ocupados, tal como se estivesse subjugado,
+					n&atilde;o pode se
+					voltar sobre si mesmo e se examinar. Portanto sua vida se precipita num abismo; e, tal como
+					n&atilde;o &eacute; de
+					nenhum proveito procurar encher uma &acirc;nfora, por mais que nela se coloque l&iacute;quido, se
+					n&atilde;o
+					h&aacute; fundo que o receba ou sustenha, assim tamb&eacute;m n&atilde;o importa quanto tempo tens
+					&agrave;
+					disposi&ccedil;&atilde;o: se n&atilde;o tens como ret&ecirc;-lo, ele vazar&aacute; como de almas
+					rachadas (6) e
+					furadas. O tempo presente &eacute; brev&iacute;ssimo, tanto que a alguns parece n&atilde;o existir,
+					pois est&aacute;
+					sempre em movimento; flui e precipita-se; deixa de ser antes de vir a ser; &eacute; t&atilde;o
+					incapaz de deter-se,
+					quanto o mundo ou as estrelas, cujo infatig&aacute;vel movimento n&atilde;o lhes permite permanecer
+					no mesmo lugar.
+					Pertence, pois, aos ocupados, apenas o tempo presente, que &eacute; t&atilde;o breve que n&atilde;o
+					pode ser
+					abarcado; e este mesmo escapa-lhes, ocupados que est&atilde;o em muitas coisas.</p>
+				<p>11 &ndash; 1: Enfim, queres saber qu&atilde;o pouco vivem os ocupados? V&ecirc; como desejam viver
+					longamente. Velhos
+					decr&eacute;pitos mendigam em suas ora&ccedil;&otilde;es um acr&eacute;scimo de uns poucos anos;
+					procuram parecer
+					menos idosos e lisonjeiam-se com mentiras e encontram tanto prazer em enganar a si pr&oacute;prios,
+					que &eacute;
+					como se enganassem junto o destino. Mas, quando uma enfermidade qualquer adverte-os de que
+					s&atilde;o mortais,
+					morrem tomados de pavor, n&atilde;o como se deixassem a vida, mas como se ela lhes fosse arrancada.
+					Ficam gritando
+					que foram tolos em n&atilde;o viver e que, se por acaso escaparem da doen&ccedil;a, haver&atilde;o
+					de viver no
+					&oacute;cio; ent&atilde;o, tomam consci&ecirc;ncia de qu&atilde;o in&uacute;til foi adquirir o que
+					n&atilde;o
+					desfrutaram, e de como todos os seus esfor&ccedil;os resultaram em (2) v&atilde;o. Mas para aquele
+					cuja vida esteve
+					livre de preocupa&ccedil;&otilde;es, por que n&atilde;o haveria ela de ser longa? Dela nada foi
+					transferido a um
+					outro, nada foi atirado a um e outro lado, nada foi dado &agrave; Fortuna, nada desperdi&ccedil;ado
+					por
+					neglig&ecirc;ncia, nada foi esbanjado com prodigalidade, nada ficou sem ser empregado: toda ela, por
+					assim dizer,
+					teve proveito. E, deste modo, por mais curta que seja, ela &eacute; mais que suficiente; e portanto,
+					quando lhe vier
+					o &uacute;ltimo dia, o s&aacute;bio n&atilde;o hesitar&aacute; em caminhar para a morte com passo
+					firme.</p>
+				<p>12 &ndash; 1: Talvez tu me perguntes a quem eu chamo de &ldquo;ocupados&rdquo;. N&atilde;o h&aacute;
+					por que pensar
+					que entendo serem ocupados apenas aqueles contra os quais se mandam os c&atilde;es para
+					expuls&aacute;-los da
+					bas&iacute;lica, ou os que vemos sobressair, seja orgulhosamente em meio &agrave; multid&atilde;o de
+					seus clientes,
+					seja desprezivelmente da de outro, ou aqueles cujos compromissos obrigam a abandonar seus lares para
+					ir bater
+					&agrave; porta do outro ou aqueles a quem a lan&ccedil;a do pretor p&otilde;e ocupados devido a um
+					(2) lucro infame
+					e que um dia haver&aacute; de apodrecer. O &oacute;cio de alguns &eacute; ocupado: quer em sua vila
+					ou em seu leito,
+					quer em meio &agrave;</p>
+				<p>solid&atilde;o, mesmo quando est&atilde;o afastados de todos, eles pr&oacute;prios prejudicam a si
+					mesmos; n&atilde;o
+					devemos chamar sua vida de ociosa, mas de ocupa&ccedil;&atilde;o indolente. Por acaso chamas de
+					ocioso o que
+					coleciona, com escrupuloso cuidado, os bronzes cor&iacute;ntios, preciosos devido &agrave; mania de
+					uns poucos, e
+					consome a maior parte de seus dias em meio a ferrugentos peda&ccedil;os de metal? E o que se senta
+					num
+					gin&aacute;sio (que vergonha! os v&iacute;cios dos quais somos v&iacute;timas nem mesmo s&atilde;o
+					romanos), para
+					apreciar as pelejas dos rapazes que se estapeiam? E o que classifica seus rebanhos de cavalos
+					segundo a cor e a
+					idade, ou os que (3) patrocinam os mais novos campe&otilde;es de atletismo? Qu&ecirc;? Tu chamas
+					ociosos os que
+					passam muitas horas no cabeleireiro, aparando o que cresceu na noite anterior, discutindo a respeito
+					de cada fio de
+					cabelo, colocando em ordem as madeixas desarranjadas, ou ajeitando sobre a testa as que est&atilde;o
+					falhas aqui e
+					ali? Como ficam irados, se o barbeiro foi um pouco negligente, crendo que estava a aparar os cabelos
+					de um
+					verdadeiro homem! Como se encolerizam, se algo de sua cabeleira foi cortado, se algo est&aacute;
+					fora de ordem, se
+					tudo n&atilde;o cai em seus devidos cachos! Qual destes n&atilde;o preferiria ver a desordem na
+					Rep&uacute;blica, a
+					ver a de seus cabelos? Quem n&atilde;o se preocupa mais com a eleg&acirc;ncia de sua cabe&ccedil;a
+					do que com sua
+					sa&uacute;de? Qual n&atilde;o prefere ser bem penteado a ser honesto? Tu chamas ociosos os que se
+					(4) preocupam com
+					pentes e espelhos? E quanto &agrave;queles que se ocupam em compor, ouvir e aprender
+					can&ccedil;&otilde;es, e
+					atormentam a voz, cuja reta entoa&ccedil;&atilde;o a Natureza fez muito simples e a melhor, com
+					inflex&otilde;es de
+					desajeitadas modula&ccedil;&otilde;es? Eles est&atilde;o sempre a estalar os dedos, marcando alguma
+					can&ccedil;&atilde;o que t&ecirc;m na cabe&ccedil;a e, mesmo quando s&atilde;o chamados para
+					quest&otilde;es
+					s&eacute;rias e freq&uuml;entemente tristes, ouvimos seu impercept&iacute;vel cantarolar. (5) Eles
+					n&atilde;o
+					t&ecirc;m &oacute;cio, mas ocupa&ccedil;&otilde;es indolentes. Nem, por H&eacute;rcules, considero
+					seus festins como
+					tempo livre, uma vez que vejo com quanta solicitude disp&otilde;em a prataria, qu&atilde;o
+					diligentemente ajeitam as
+					t&uacute;nicas de seus jovens prediletos, qu&atilde;o ansiosos ficam por saber como o javali sai das
+					m&atilde;os do
+					cozinheiro, ou com que velocidade os escravos jovens, a um dado sinal, correm &agrave;s suas
+					obriga&ccedil;&otilde;es, com quanta per&iacute;cia as aves s&atilde;o cortadas em bocados
+					n&atilde;o muito grandes,
+					ou qu&atilde;o</p>
+				<p>cuidadosamente os infelizes escravos limpam o v&ocirc;mito dos b&ecirc;bados. &Eacute; por estes
+					meios que adquirem a
+					fama de serem elegantes e faustosos, e seus males perseguem-nos at&eacute; mesmo nos menores
+					detalhes da vida, de
+					modo que eles n&atilde;o (6) podem comer nem beber sem afeta&ccedil;&atilde;o. Eu n&atilde;o
+					contaria entre os
+					ociosos aqueles que se fazem transportar para c&aacute; e para l&aacute; em carruagens ou liteiras,
+					e observam
+					pontualmente a hora de seus passeios, como se n&atilde;o lhes fosse l&iacute;cito perd&ecirc;-los;
+					nem os que se
+					fazem lembrar por outro quando devem banhar-se, nadar ou comer: seus esp&iacute;ritos
+					extraordinariamente
+					d&eacute;beis est&atilde;o t&atilde;o enfraquecidos pela lassid&atilde;o, que eles nem mesmo podem
+					decidir por si
+					s&oacute;s se t&ecirc;m fome! J&aacute; ouvi um desses delicados (se &eacute; que se pode chamar de
+					del&iacute;cias
+					o fato de desaprender os h&aacute;bitos da vida humana), ao ser retirado do banho e colocado numa
+					cadeira,
+					perguntar: &ldquo;Ainda estou sentado?&rdquo; Tu cr&ecirc;s que este, que ignora at&eacute; se
+					est&aacute; sentado,
+					sabe se vive, se v&ecirc;, se &eacute; ocioso? N&atilde;o poderia dizer de pronto o que lamento
+					mais: ele (7)
+					realmente n&atilde;o saber ou fingir n&atilde;o sab&ecirc;-lo. Esses esquecem-se realmente de muitas
+					coisas, mas
+					tamb&eacute;m fingem esquecer de muitas outras. Certos v&iacute;cios deleitam-nos como se fossem
+					provas de
+					felicidade: parece-lhes pr&oacute;prio de um homem muito baixo e desprez&iacute;vel saber o que faz.
+					E</p>
+				<p>agora n&atilde;o v&aacute;s crer que os mimos exageram quando ridicularizam a lux&uacute;ria. Estes,
+					por
+					H&eacute;rcules, ultrapassam em muito as inven&ccedil;&otilde;es dos mimos, e neste nosso
+					s&eacute;culo, engenhoso
+					apenas para tais coisas, os v&iacute;cios progrediram tanto que j&aacute; podemos acusar os mimos de
+					neglig&ecirc;ncia. &Eacute; o c&uacute;mulo: haver algu&eacute;m que est&aacute; t&atilde;o atolado
+					na
+					lux&uacute;ria, que se fia na palavra de um (8) outro para saber se est&aacute; ou n&atilde;o
+					sentado!</p>
+				<p>Portanto esse a&iacute; n&atilde;o &eacute; ocioso; d&aacute;-lhe outro nome: ele est&aacute; doente,
+					ou, melhor
+					ainda, est&aacute; morto. &Eacute; ocioso o que &eacute; tamb&eacute;m consciente de seu lazer. Mas
+					este semi-vivo,
+					que precisa de algu&eacute;m que lhe indique a postura do pr&oacute;prio corpo, como poderia ser
+					senhor de um
+					momento sequer de sua vida?</p>
+				<p>13 &ndash; 1: Seria alongar demais percorrer todos os exemplos daqueles que desperdi&ccedil;aram suas
+					vidas em jogos
+					de xadrez, bola, ou queimando-se ao sol. N&atilde;o gozam de &oacute;cio aqueles cujos prazeres
+					trazem muitas
+					ocupa&ccedil;&otilde;es. Pois ningu&eacute;m duvidar&aacute; que muito se fatigam sem nada obrar, os
+					que se prendem
+					a in&uacute;teis quest&otilde;es de (2) literatura &ndash; e eles j&aacute; s&atilde;o
+					multid&atilde;o entre os
+					romanos! Foi um v&iacute;cio dos gregos investigar quantos remadores teve Ulisses, se a
+					Il&iacute;ada ou a
+					Odiss&eacute;ia foi escrita primeiro e, al&eacute;m disso, se eram de um mesmo autor, e outros
+					conhecimentos dessa
+					esp&eacute;cie, que, se os reservas para ti mesmo, em nada deleitam o intelecto, se os publicas,
+					n&atilde;o
+					ser&aacute;s tido por mais douto, mas por mais (3) enfadonho. E eis que esta fr&iacute;vola
+					paix&atilde;o de
+					aprender inutilidades apossou-se tamb&eacute;m dos romanos. H&aacute; alguns dias ouvi certa pessoa
+					relatando qual
+					foi o primeiro dos generais a fazer tais e tais coisas; que Du&iacute;lio foi o primeiro a vencer
+					numa batalha
+					naval, que C&uacute;rio Dentato foi o primeiro a conduzir elefantes no seu cortejo triunfal. Mas
+					esses assuntos,
+					ainda que n&atilde;o conduzam &agrave; verdadeira gl&oacute;ria, versam sobre exemplos de feitos
+					c&iacute;vicos; tal
+					ci&ecirc;ncia n&atilde;o acarreta benef&iacute;cio algum, embora nos prenda a aten&ccedil;&atilde;o
+					pela futilidade
+					dos feitos. (4) Perdoemos tamb&eacute;m aos que pesquisam assuntos como este: quem foi o primeiro a
+					persuadir os
+					romanos a embarcar num navio. Foi Cl&aacute;udio, e por este mesmo motivo cognominado
+					&ldquo;Caudex&rdquo;, porque
+					entre os antigos a reuni&atilde;o de v&aacute;rias t&aacute;buas chamava-se &ldquo;caudex&rdquo;;
+					da&iacute; o nome
+					de &ldquo;codices&rdquo; &agrave;s t&aacute;buas da lei, e, ainda hoje, as naves que carregam
+					provis&otilde;es pelo
+					Tibre s&atilde;o (5) chamadas, segundo a maneira antiga, de &ldquo;codicariae&rdquo;. Sem
+					d&uacute;vida, isto pode
+					ser de algum valor: que Val&eacute;rio Corvino foi o primeiro a subjugar Messina e, tendo tomado
+					para si o nome da
+					cidade conquistada, foi o primeiro da fam&iacute;lia dos Val&eacute;rios a denominar-se Messana; e
+					que, tendo sido
+					trocadas as letras por uma gradual corruptela da linguagem popular, chamou-se (6) Messala.
+					Porventura
+					permitir&aacute;s a algu&eacute;m ocupar-se tamb&eacute;m disto: que L&uacute;cio Sulla foi o
+					primeiro a apresentar
+					os le&otilde;es soltos no Circo, enquanto que anteriormente eram apresentados acorrentados, e que
+					foram enviados
+					arqueiros pelo rei Boco para extermin&aacute;-los? Que seja!</p>
+				<p>Fa&ccedil;amos tamb&eacute;m essa concess&atilde;o. Mas acaso h&aacute; um m&iacute;nimo de valor em
+					saber que Pompeu
+					foi o primeiro a proporcionar um combate no Circo com dezoito elefantes, tendo-se enviado criminosos
+					para
+					enfrent&aacute;los, como se fosse uma batalha? O primeiro dos cidad&atilde;os e, segundo o que a
+					fama nos legou,
+					homem que sobressaiu entre os antigos l&iacute;deres por sua bondade, julgou ser um novo tipo de
+					espet&aacute;culo
+					digno de mem&oacute;ria matar homens de um modo novo. Combatem at&eacute; a morte? &ndash; &Eacute;
+					pouco.
+					Despeda&ccedil;am-se? &ndash; &Eacute;</p>
+				<p>pouco. (7) Que sejam esmagados por uma enorme massa de animais! Seria suficiente que esses assuntos
+					passassem ao
+					esquecimento, para que posteriormente um prepotente qualquer n&atilde;o aprendesse e</p>
+				<p>invejasse uma a&ccedil;&atilde;o t&atilde;o desumana. Quantas trevas uma grande fortuna causa
+					&agrave;s nossas
+					mentes!</p>
+				<p>Acreditou estar acima das leis da Natureza quando lan&ccedil;ou aquele bando de miser&aacute;veis a
+					feras nascidas
+					sob outros c&eacute;us, quando proporcionou um combate entre animais t&atilde;o desiguais, quando
+					fez verter tanto
+					sangue diante dos olhos do povo romano &ndash; ele, que em breve seria for&ccedil;ado a verter mais
+					ainda. Mas, logo
+					em seguida, o mesmo Pompeu, tra&iacute;do pela deslealdade alexandrina, entregou-se ao &uacute;ltimo
+					dos escravos
+					para ser abatido; s&oacute; ent&atilde;o compreendeu a v&atilde; (8) ostenta&ccedil;&atilde;o de seu
+					Cognome. Mas,
+					para que retorne ao ponto de onde me desviei e para que mostre a inutil&iacute;ssima
+					dilig&ecirc;ncia de alguns
+					nestes mesmos assuntos: aquele mesmo erudito contava que Metelo, tendo vencido os cartagineses na
+					Sic&iacute;lia,
+					foi o &uacute;nico de todos os romanos a conduzir em seu triunfo cento e vinte elefantes diante do
+					carro, e que
+					Sulla foi o &uacute;ltimo dos romanos a aumentar o &ldquo;pomerium&rdquo;, coisa que, segundo os
+					costumes antigos,
+					s&oacute; se fazia ap&oacute;s a conquista de territ&oacute;rios italianos, e nunca provinciais.
+					H&aacute; alguma
+					utilidade maior em saber que o monte Aventino, como assegurava aquele, situa-se para al&eacute;m do
+					&ldquo;pomerium&rdquo; por uma dessas duas raz&otilde;es: ou porque a plebe tenha-se afastado
+					da&iacute;, ou porque,
+					quando Remo tomava os ausp&iacute;cios, o v&ocirc;o das aves n&atilde;o foi favor&aacute;vel &ndash;
+					e ainda outros
+					inumer&aacute;veis conhecimentos, que, ou est&atilde;o abarrotados de mentiras, ou s&atilde;o desta
+					natureza? (9)
+					Pois mesmo que se admita que eles contam essas coisas todas de boa f&eacute; e que se
+					responsabilizam pelo que foi
+					escrito, contudo esses conhecimentos servir&atilde;o para minorar os erros de algu&eacute;m?
+					Refrear&atilde;o as
+					paix&otilde;es de algu&eacute;m? Far&atilde;o algu&eacute;m mais generoso, mais corajoso, mais
+					justo? &Agrave;s
+					vezes meu caro Fabiano dizia duvidar se era melhor n&atilde;o empreender estudo algum do que se
+					envolver com os
+					deste g&ecirc;nero.</p>
+				<p>14 &ndash; 1: Dentre todos os homens, somente s&atilde;o ociosos os que est&atilde;o
+					dispon&iacute;veis para a
+					sabedoria; eles s&atilde;o os &uacute;nicos a viver, pois, n&atilde;o apenas administram bem sua
+					vida, mas
+					acrescentam-lhe toda a eternidade. Todos os anos que se passaram antes deles s&atilde;o somados aos
+					seus. A menos
+					que sejamos os maiores dos ingratos, aqueles fundadores das sublimes filosofias nasceram para
+					n&oacute;s, e eles nos
+					preparam o caminho para a vida. Gra&ccedil;as aos seus esfor&ccedil;os, conduzem-nos das trevas
+					&agrave; luz, aos
+					mais belos conhecimentos. N&atilde;o nos &eacute; vedado o acesso a nenhum s&eacute;culo, somos
+					admitidos a todos; e
+					se desejamos, pela grandeza da alma, ultrapassar os estreitos limites da fraqueza humana, h&aacute;
+					um vasto
+					espa&ccedil;o de tempo a percorrer. (2) Poderemos discutir com S&oacute;crates, duvidar com
+					Carn&eacute;ades,
+					encontrar a paz com Epicuro, vencer a natureza humana com a ajuda dos est&oacute;icos,
+					ultrapass&aacute;-la com os
+					c&iacute;nicos. J&aacute; que a Natureza nos permite entrar em comunh&atilde;o com toda a
+					eternidade, por que
+					n&atilde;o nos desviarmos dessa estreita e curta passagem do tempo e nos entregarmos com todo nosso
+					esp&iacute;rito
+					&agrave;quilo que &eacute; ilimitado, eterno e partilhado com os (3) melhores? Os que se desdobram
+					em muitos
+					compromissos sociais, que agitam a si mesmos e a outros, bem conscientes de suas tolices,
+					ap&oacute;s terem
+					percorrido diariamente as soleiras de todos e n&atilde;o ter deixado de entrar em nenhuma porta
+					aberta, ap&oacute;s
+					terem levado sua interesseira sauda&ccedil;&atilde;o &agrave; volta das mais remotas casas,
+					qu&atilde;o pouco
+					n&atilde;o ter&atilde;o eles visto numa cidade t&atilde;o grande e dilacerada por v&aacute;rias
+					paix&otilde;es! (4)
+					Quantos haver&aacute; cujo sono, dissolu&ccedil;&atilde;o ou grosseria n&atilde;o os
+					afastar&aacute;? Quantos,
+					ap&oacute;s os terem torturado com uma longa espera, n&atilde;o passar&atilde;o por eles fingindo
+					estarem
+					apressados? Quantos n&atilde;o evitar&atilde;o aparecer no &aacute;trio repleto de clientes,
+					escapando por portas
+					secretas, como se fosse menor descortesia enganar do que despedir! Quantos, ainda meio adormecidos e
+					pesados devido
+					&agrave; embriaguez da noite anterior, responder&atilde;o, &agrave;queles pobres coitados que
+					interromperam seu sono
+					para esperar o despertar de um outro, com o bocejo mais arrogante, mal levantando os (5)
+					l&aacute;bios! Podemos
+					afirmar que se dedicam a verdadeiros deveres, somente aqueles que desejam estar cotidianamente na
+					intimidade de
+					Zen&atilde;o, Pit&aacute;goras, Dem&oacute;crito, Arist&oacute;teles, Teofrasto e os demais mestres
+					de virtude.
+					Nenhum deles deixar&aacute; de estar &agrave; nossa disposi&ccedil;&atilde;o, nenhum
+					despedir&aacute; o que o
+					procurar, sem que o fa&ccedil;a mais feliz e mais devotado a ele, nenhum permitir&aacute; a quem
+					quer que seja
+					partir de m&atilde;os vazias; e eles podem ser encontrados por qualquer homem, tanto durante o dia
+					como &agrave;
+					noite.</p>
+				<p>15 &ndash; 1: Nenhum destes for&ccedil;ar&aacute; tua morte, todos te ensinar&atilde;o a morrer,
+					nenhum
+					dissipar&aacute; teus anos, mas te oferecer&aacute; os seus. Nunca a conversa&ccedil;&atilde;o com
+					eles ser&aacute;
+					perigosa, fatal a amizade ou onerosa a defer&ecirc;ncia. Conseguir&aacute;s deles tudo o que
+					quiseres: n&atilde;o
+					ser&aacute; deles a culpa (2) se n&atilde;o tiveres exaurido tudo o que desejas. Que felicidade, que
+					bela velhice
+					n&atilde;o aguarda o que se disp&ocirc;s a ser seu cliente! Ele ter&aacute; com quem discutir sobre
+					as menores, bem
+					como sobre as maiores, quest&otilde;es, a quem consultar diariamente sobre si mesmo, de quem ouvir a
+					verdade sem
+					ofensa e ser louvado sem adula&ccedil;&atilde;o, a cuja (3) semelhan&ccedil;a se possa moldar.
+					Costumamos dizer que
+					n&atilde;o est&aacute; em nosso poder escolher os pais que a sorte nos destinou, mas que nos foram
+					dados ao acaso;
+					contudo &eacute; nos permitido ter um nascimento segundo a nossa escolha. Existem fam&iacute;lias
+					dos mais nobres
+					esp&iacute;ritos: escolhe a qual delas queres pertencer, e receber&aacute;s n&atilde;o apenas seu
+					nome, mas
+					tamb&eacute;m seus pr&oacute;prios bens, que n&atilde;o ter&aacute;s de vigiar miser&aacute;vel e
+					mesquinhamente,
+					pois, quanto mais forem partilhados pelos homens, maiores (4) se tornar&atilde;o. Estes te
+					dar&atilde;o o acesso
+					&agrave; eternidade, te elevar&atilde;o &agrave;quelas alturas de onde ningu&eacute;m se precipita.
+					Esta &eacute; a
+					&uacute;nica maneira de prolongara exist&ecirc;ncia mortal e, at&eacute; mais, de convert&ecirc;-la
+					em imortalidade.
+					As dignidades, os monumentos, tudo o que a ambi&ccedil;&atilde;o imp&ocirc;s por decretos, ou
+					construiu com o suor,
+					depressa h&aacute; de cair em ru&iacute;nas: n&atilde;o h&aacute; nada que a longa passagem dos anos
+					n&atilde;o
+					destrua ou desordene. Mas ela n&atilde;o pode tocar nos conhecimentos que a sabedoria consagrou,
+					nenhuma idade os
+					destruir&aacute; ou diminuir&aacute;, a seguinte e as sucessivas sempre h&atilde;o de
+					aument&aacute;-los ainda mais:
+					pois a inveja tem olhos apenas para o que est&aacute; pr&oacute;ximo de si, e admiramos com menos
+					mal&iacute;cia o
+					que est&aacute; (5) distante. Portanto a vida do fil&oacute;sofo estende-se por muito tempo, e ele
+					n&atilde;o
+					est&aacute; confinado nos mesmos limites que os outros. &Eacute; o &uacute;nico a n&atilde;o
+					depender das leis do
+					g&ecirc;nero humano: todos os s&eacute;culos servem-no como a um deus. Algo distancia-se no passado?
+					Ele recupera-o
+					com a mem&oacute;ria. Est&aacute; no presente? Ele o desfruta. H&aacute;</p>
+				<p>de vir no futuro? Ele o antecipa. A reuni&atilde;o de todos os momentos num s&oacute; torna-lhe longa
+					a vida. 16
+					&ndash; 1: &Eacute; extremamente breve e agitada a vida dos que esquecem o passado, negligenciam o
+					presente e
+					receiam o futuro; quando chegam ao termo de suas exist&ecirc;ncias, os pobres coitados compreendem
+					tardiamente que
+					(2) estiveram por longo tempo ocupados em nada fazer. E, pelo fato de fazerem freq&uuml;entes apelos
+					&agrave; morte,
+					n&atilde;o h&aacute; por que pensar que fica provado que eles tenham usufru&iacute;do duma longa
+					exist&ecirc;ncia.
+					Sua cegueira os atormenta com emo&ccedil;&otilde;es incertas e que os faz incidir nas
+					pr&oacute;prias coisas que
+					temem: desejam ent&atilde;o muitas vezes a morte, (3) porque os aterroriza. N&atilde;o h&aacute;
+					ainda raz&atilde;o
+					para se pensar que isto tamb&eacute;m seja uma prova de uma vida longa: &ndash; o fato de muitas
+					vezes os dias lhes
+					parecerem longos, ou porque se queixam de as horas custarem a passar at&eacute; que chegue o momento
+					do jantar;
+					pois, se porventura as ocupa&ccedil;&otilde;es os abandonam, sentem-se desertados e inquietam-se
+					mesmo no lazer, nem
+					sabem como dispor dele ou mat&aacute;-lo. Portanto anseiam por uma ocupa&ccedil;&atilde;o qualquer,
+					e todo intervalo
+					de tempo entre duas ocupa&ccedil;&otilde;es lhes &eacute; um fardo. E &ndash; por H&eacute;rcules
+					&ndash; tal
+					&eacute; o que acontece quando se fixa a data dos combates de gladiadores, ou quando se aguarda o
+					dia de um outro
+					g&ecirc;nero qualquer de espet&aacute;culo ou divertimento: (4) desejam saltar os dias
+					intermedi&aacute;rios! A
+					espera de qualquer coisa por que anseiam lhes &eacute; penosa, mas aquele instante que lhes &eacute;
+					grato corre
+					breve e r&aacute;pido e torna-se muito mais breve por sua pr&oacute;pria culpa, pois passam de um
+					prazer a outro e
+					n&atilde;o podem permanecer fixos num s&oacute;</p>
+				<p>desejo. Seus dias n&atilde;o s&atilde;o longos, mas detest&aacute;veis, e, por outro lado,
+					qu&atilde;o curtas
+					n&atilde;o lhes parecem as noites que passam nos bra&ccedil;os das prostitutas ou (5) entregues ao
+					vinho! Da&iacute;
+					tamb&eacute;m resulta o del&iacute;rio dos poetas, que nutrem os descaminhos dos homens com
+					fic&ccedil;&otilde;es
+					nas quais se mostra J&uacute;piter, inebriado do desejo de coito, duplicando a dura&ccedil;&atilde;o
+					da noite. Que
+					outra coisa &eacute;, sen&atilde;o inflamar nossos v&iacute;cios, quando os imputamos aos deuses e
+					se concede a
+					defer&ecirc;ncia da divindade a um exemplo de fraqueza? Podem estes n&atilde;o achar muito curtas as
+					noites pelas
+					quais pagam t&atilde;o caro? Perdem o dia na espera da noite, a noite, de medo da aurora.</p>
+				<p>17 &ndash; 1: Seus pr&oacute;prios prazeres s&atilde;o desassossegados e agitados por v&aacute;rios
+					terrores e, mesmo
+					em meio &agrave;</p>
+				<p>maior euforia, assalta-lhes o inquieto pensamento: &ldquo;at&eacute; quando, tudo isto?&rdquo; Por
+					causa desse
+					sentimento, os reis lamentaram seu poderio, e a grandeza de sua fortuna n&atilde;o lhes era grata,
+					mas
+					aterrorizaram-se com o fim que um dia lhes adviria. O mais insolente dos reis da P&eacute;rsia, ao
+					ver seus
+					ex&eacute;rcitos espalhados por vastos espa&ccedil;os de terra, de modo que nem podia abarcar seu
+					n&uacute;mero mas
+					apenas a extens&atilde;o, desfez-se em l&aacute;grimas porque, dizia, em cem anos nenhum dentre
+					t&atilde;o grande
+					(2) n&uacute;mero de jovens haveria de estar vivo. Mas ele pr&oacute;prio, que chorava, estava
+					prestes a
+					apress&aacute;-los para aquele destino, fazendo perecer uns no mar, outros em terra, uns no combate,
+					outros na
+					retirada, e dentro de pouco tempo haveria de exterminar aqueles por quem temia (3) o
+					cent&eacute;simo ano. Qual o
+					motivo de tamb&eacute;m suas alegrias serem temerosas? &Eacute; que n&atilde;o brotam de causas
+					s&oacute;lidas; pelo
+					contr&aacute;rio, o pr&oacute;prio vazio de onde nascem perturba-as. E como pensas serem aqueles
+					momentos
+					(miser&aacute;veis, segundo sua pr&oacute;pria confiss&atilde;o), j&aacute; que os pr&oacute;prios
+					motivos pelos
+					quais s&atilde;o exaltados e se (4) colocam acima dos homens s&atilde;o muito impuros? Todos os
+					maiores bens
+					est&atilde;o cheios de ansiedade, e as maiores fortunas s&atilde;o as menos dignas de
+					cr&eacute;dito; para alimentar
+					a felicidade, faz-se necess&aacute;ria uma outra felicidade, e em paga a uma promessa realizada,
+					outras promessas
+					devem ser feitas. Pois tudo o que nos sucede por obra do acaso &eacute;</p>
+				<p>inst&aacute;vel, e quanto mais alto nos elevamos, tanto mais estamos sujeitos a cair. &Eacute; claro
+					que o que
+					est&aacute;</p>
+				<p>condenado a cair n&atilde;o agrada a ningu&eacute;m. Portanto &eacute; necessariamente a mais
+					miser&aacute;vel e
+					n&atilde;o apenas a mais breve, a vida dos que obt&ecirc;m com grande esfor&ccedil;o algo que
+					conservam com um
+					esfor&ccedil;o ainda (5) maior. Em meio a grandes labutas, conseguem o que desejam e ansiosos
+					conservam o que
+					conseguiram; entretanto n&atilde;o t&ecirc;m consci&ecirc;ncia de que o tempo nunca mais h&aacute;
+					de voltar. Novas
+					ocupa&ccedil;&otilde;es seguem-se &agrave;s antigas; a esperan&ccedil;a suscita esperan&ccedil;a; a
+					ambi&ccedil;&atilde;o, ambi&ccedil;&atilde;o. N&atilde;o procuram um fim &agrave;s mis&eacute;rias,
+					mas mudam seu
+					assunto. Nossos cargos nos atormentam? Os dos outros nos tomar&atilde;o mais tempo. Cessamos de
+					fatigar-nos como
+					candidatos? Come&ccedil;amos novamente como partid&aacute;rios. Renunciamos ao estorvo de acusar?
+					Apresenta-se-nos o
+					de julgar. Deixa de ser juiz? &Eacute; feito pretor. Envelheceu como administrador de (6)
+					propriedades alheias?
+					Ocupa-se agora com sua riqueza. As vestes guerreiras deram folga a M&aacute;rio?</p>
+				<p>O consulado n&atilde;o lhe d&aacute; sossego. Cincinato apressa-se a escapar do cargo ditatorial?
+					Ser&aacute;
+					novamente chamado do arado. Cipi&atilde;o ainda muito jovem para uma tarefa de tal envergadura,
+					combater&aacute; os
+					cartagineses; vencedor de An&iacute;bal, vencedor de Ant&iacute;oco, orgulho de seu consulado e
+					garantia do de seu
+					irm&atilde;o, seria colocado ao lado de J&uacute;piter, n&atilde;o fosse sua
+					interven&ccedil;&atilde;o pessoal. As
+					guerras civis perseguir&atilde;o este salvador da p&aacute;tria e, tendo sido na juventude honrado
+					como um deus,
+					j&aacute; velho deleitar-se-&aacute; apenas com o desejo de um altivo ex&iacute;lio. Nunca
+					faltar&atilde;o motivos
+					de inquieta&ccedil;&atilde;o, quer na prosperidade, quer na mis&eacute;ria: a vida ser&aacute;
+					dilacerada entre as
+					ocupa&ccedil;&otilde;es; o &oacute;cio sempre desejado, nunca obtido.</p>
+				<p>18 &ndash; 1: Portanto, meu caro Paulino, aparta-te da multid&atilde;o e, j&aacute; bastante acossado
+					pela
+					dura&ccedil;&atilde;o de tua exist&ecirc;ncia, n&atilde;o te afastes de um porto mais
+					tranq&uuml;ilo. Pensa quantas
+					vagas j&aacute; te acometeram, quantas tempestades, de uma parte, j&aacute; suportaste na vida
+					particular, quantas,
+					de outra, suscitaste contra ti na vida p&uacute;blica. Teu valor j&aacute; foi suficientemente
+					testado, em
+					fatigantes e atormentadas provas, o teu valor: tenta ver o que pode realizar no &oacute;cio. A maior
+					parte de tua
+					vida, e certamente a melhor, foi dada &agrave;</p>
+				<p>Rep&uacute;blica, toma (2) tamb&eacute;m para ti um pouco de teu tempo. N&atilde;o te convoco a um
+					retiro indolente e
+					inativo, nem a afogar todo o teu vigoroso car&aacute;ter no sono ou nos prazeres caros &agrave;
+					multid&atilde;o:
+					isso n&atilde;o &eacute;</p>
+				<p>estar em sossego. Encontrar&aacute;s tarefas maiores que todas as que cumpriste devotadamente
+					at&eacute; aqui, as
+					quais executar&aacute;s no retiro e livre de (3) preocupa&ccedil;&otilde;es. Com efeito, tu
+					administras as contas do
+					mundo t&atilde;o desinteressadamente como as alheias, t&atilde;o diligentemente como as tuas,
+					t&atilde;o
+					escrupulosamente como as do Estado. Conquistas a estima num cargo onde &eacute; dif&iacute;cil
+					evitar o rancor,
+					contudo, acredite-me, &eacute; mais proveitoso fazer a conta de teus anos do que as (4) do trigo do
+					Estado. Este teu
+					vigor de &acirc;nimo, capaz das maiores coisas, desvia-o de um cargo, sem d&uacute;vida honroso, mas
+					pouco adequado
+					para tornar uma vida feliz; e lembra-te de que n&atilde;o foste educado desde os mais tenros anos
+					nos estudos
+					liberais para que alqueires de trigo te fossem confiados: esperaste algo maior e mais alto.
+					N&atilde;o
+					faltar&atilde;o homens de sobriedade comprovada e atividade laboriosa. Jumentos laboriosos
+					s&atilde;o mais aptos a
+					carregar fardos do que cavalos de ra&ccedil;a, e quem jamais oprimiu a excelente ligeireza deles com
+					(5) pesadas
+					cargas? Al&eacute;m disso, reflete quantas preocupa&ccedil;&otilde;es n&atilde;o tens ao assumir
+					tanta
+					responsabilidade. Tu lidas com os ventres dos homens! O povo esfaimado n&atilde;o d&aacute; ouvidos
+					&agrave;
+					raz&atilde;o, n&atilde;o se aplaca pela modera&ccedil;&atilde;o, nem se dobra a nenhum argumento.
+					Muito
+					recentemente, naqueles poucos dias ap&oacute;s a morte de C&eacute;sar, diz-se que ele se indignou
+					muit&iacute;ssimo
+					(se h&aacute; ainda algum sentimento nos infernos), porque sabia que o povo romano lhe sobrevivia e
+					ainda lhes
+					restavam provis&otilde;es para sete ou oito dias! E, enquanto ele constru&iacute;a pontes de navios
+					e divertia-se
+					com as for&ccedil;as do Imp&eacute;rio, estava &agrave;s nossas portas o pior dos males, at&eacute;
+					mesmo para os
+					sitiados: a falta de alimentos. Seu infeliz desejo de imitar um rei arrogante, estrangeiro e louco,
+					quase custou
+					&agrave; cidade a mis&eacute;ria e a fome, e o (6) que se segue &agrave; fome, a ru&iacute;na de
+					tudo. E
+					ent&atilde;o qual n&atilde;o era o estado de esp&iacute;rito daqueles a quem eram confiados os
+					cuidados com o trigo
+					p&uacute;blico, e que tinham de enfrentar pedra, ferro, fogo e o pr&oacute;prio Cal&iacute;gula? Com
+					a maior
+					dissimula&ccedil;&atilde;o, encobriam um t&atilde;o grande mal incrustado nas v&iacute;sceras do
+					Estado &ndash; e
+					digo que o faziam com raz&atilde;o! Pois algumas doen&ccedil;as devem ser curadas sem que os
+					pacientes as
+					conhe&ccedil;am: a muitos, o conhecimento de sua doen&ccedil;a foi a causa da morte.</p>
+				<p>19 &ndash; 1: Recolhe-te a estas coisas mais tranq&uuml;ilas, mais seguras, melhores! Acaso tu pensas
+					serem o mesmo
+					estas duas coisas: cuidar que o trigo seja transportado ao celeiro, intacto e a salvo da fraude ou
+					neglig&ecirc;ncia
+					dos carregadores, que n&atilde;o se estrague pela fermenta&ccedil;&atilde;o, que esteja bem seco,
+					que seu peso e
+					medida confiram, e elevar-se &agrave;s coisas sagradas e sublimes para conhecer qual &eacute; a
+					subst&acirc;ncia de
+					deus, seu prazer, sua condi&ccedil;&atilde;o, sua forma, que destino aguarda tua alma, que lugar a
+					Natureza nos
+					destina ap&oacute;s nos separarmos do corpo, qual a raz&atilde;o por que ela mant&eacute;m os corpos
+					mais pesados no
+					centro do universo, suspende os altos &agrave;s regi&otilde;es altas, eleva o fogo &agrave; mais
+					alta, impele as
+					estrelas &agrave;s suas trajet&oacute;rias e ainda outras coisas cheias de not&aacute;veis (2)
+					maravilhas? Abandona
+					o solo e volta-te a esses estudos! Agora, enquanto o sangue ferve, deve-se ir, com
+					determina&ccedil;&atilde;o, para
+					o melhor. Grande n&uacute;mero de bons conhecimentos te esperam neste g&ecirc;nero de vida: o amor e
+					a
+					pr&aacute;tica das virtudes, o</p>
+				<p>esquecimento das paix&otilde;es, o saber viver e morrer, enfim, uma grande tranq&uuml;ilidade. (3) A
+					condi&ccedil;&atilde;o de todos os ocupados &eacute; miser&aacute;vel, contudo a mais
+					miser&aacute;vel &eacute; a
+					daqueles que nem se molestam com suas pr&oacute;prias ocupa&ccedil;&otilde;es, que regulam seu sono
+					pelo alheio, que
+					caminham segundo as passadas de outro e que est&atilde;o sob ordens, mesmo nas mais livres das
+					coisas: amar e odiar.
+					Estes, se quiserem saber qu&atilde;o breve &eacute; a vida, que considerem qu&atilde;o
+					insignificante &eacute; a
+					parte que lhes cabe.</p>
+				<p>20 &ndash; 1: Portanto, quando vires freq&uuml;entemente uma toga pretexta ou um nome c&eacute;lebre
+					no f&oacute;rum,
+					n&atilde;o o invejes: essas coisas s&atilde;o adquiridas ao custo da vida. Para ligar seu nome a um
+					&uacute;nico
+					ano, consumir&atilde;o todos os seus anos. A uns, a vida abandonou logo nas primeiras etapas, antes
+					que tivessem
+					atingido as alturas ambicionadas; a outros, ap&oacute;s terem galgado o cume das honras
+					atrav&eacute;s de mil
+					desonestidades, sobrev&eacute;m o triste pensamento: &ldquo;ter trabalhado tanto por uma
+					inscri&ccedil;&atilde;o num
+					t&uacute;mulo!&rdquo; Enquanto estavam dispostos para novas esperan&ccedil;as como na mocidade, a
+					extrema velhice de
+					alguns, j&aacute; incapaz, frustroulhes os grandes e insaci&aacute;veis (2) esfor&ccedil;os.
+					Vergonha daquele que,
+					j&aacute; de idade avan&ccedil;ada e querendo obter aplausos de um p&uacute;blico ignorante, num
+					processo de
+					litigantes desconhecidos, perde seu f&ocirc;lego; desgra&ccedil;ado o que, esgotado mais por causa
+					de sua vida do
+					que por causa de seu trabalho, sucumbe em meio aos seus pr&oacute;prios deveres; desgra&ccedil;ado o
+					que morre
+					recebendo suas contas sob o riso do herdeiro longamente (3) deserdado. N&atilde;o posso omitir um
+					&uacute;ltimo
+					exemplo que me ocorre: S&atilde;o Turanio foi um velho de comprovada dilig&ecirc;ncia, que, depois
+					de completar
+					noventa anos, como fosse dispensado de seu cargo por C&eacute;sar sem que tenha solicitado, ordenou
+					que o colocassem
+					em seu leito e que a fam&iacute;lia, que se reuniu em torno dele como se estivesse morto, o
+					pranteasse. A casa
+					lamentava o &oacute;cio de seu velho senhor, e a tristeza n&atilde;o terminou antes que o cargo (4)
+					lhe fosse
+					restitu&iacute;do. &Eacute; t&atilde;o bom assim, morrer ocupado? O</p>
+				<p>mesmo estado de esp&iacute;rito manifesta-se em muitos, o desejo de trabalhar perdura mais que a
+					capacidade, lutam
+					contra a fraqueza do corpo e julgam penosa a velhice, por nenhuma outra raz&atilde;o sen&atilde;o
+					porque ela os
+					p&otilde;e de lado. A lei n&atilde;o mobiliza um soldado nos seus cinq&uuml;enta anos, nem convoca
+					um senador nos
+					sessenta; os homens obt&ecirc;m com mais dificuldade folga de si (5) mesmos do que da lei.
+					Entrementes, enquanto
+					roubam e s&atilde;o roubados, enquanto um arrebata o repouso de outro, enquanto tornam-se mutuamente
+					miser&aacute;veis, sua vida &eacute; sem proveito, sem prazeres, sem nenhum aperfei&ccedil;oamento
+				</p>
+				<p>intelectual. Ningu&eacute;m tem a morte &agrave; vista, todos estendem suas esperan&ccedil;as ao
+					longe, alguns chegam
+					at&eacute;</p>
+				<p>mesmo a tomar disposi&ccedil;&otilde;es com rela&ccedil;&atilde;o a coisas que est&atilde;o
+					al&eacute;m de suas
+					vidas: enormes t&uacute;mulos, dedicat&oacute;rias de servi&ccedil;os p&uacute;blicos,
+					d&aacute;divas junto de suas
+					piras funer&aacute;rias e pomposas ex&eacute;quias. Mas, por H&eacute;rcules, seus funerais deveriam
+					ser conduzidos
+					&agrave; luz de tochas e c&iacute;rios, como se tivesse vivido pouqu&iacute;ssimo!</p>
+				<p><strong>Notas:</strong></p>
+				<p>1 &ndash; para Arist&oacute;teles, s&oacute; a forma &eacute; boa, a corrup&ccedil;&atilde;o do mundo
+					adviria da
+					presen&ccedil;a da mat&eacute;ria. Os est&oacute;icos tomar&atilde;o uma posi&ccedil;&atilde;o
+					intermedi&aacute;ria
+					e acreditar&atilde;o na benevol&ecirc;ncia da natureza.</p>
+				<p>2 &ndash; Quando S&ecirc;neca se refere ao maior dos poetas, n&atilde;o se sabe se refere-se a Homero
+					ou
+					Virg&iacute;lio. 3 &ndash; Nunca &eacute; permitido &agrave;s suas v&iacute;timas voltar a si
+					&ndash; Os ocupados
+					n&atilde;o tem tempo para refletir sobre si, da&iacute;</p>
+				<p>o estranhamento de si mesmos. O homem, no entanto, pode ultrapassar sua condi&ccedil;&atilde;o
+					meramente</p>
+				<p>corporal e alcan&ccedil;ar o conhecimento de si como alma e raz&atilde;o, integrando-se assim ao
+					logos universal. 4
+					&ndash; Augusto (63 a.C. &ndash; 14 d.C.), primeiro imperador de Roma, foi grande patrono das letras
+					e das artes. 5
+					&ndash; C&iacute;cero (106 &ndash; 43 a.C.), o maior orador romano, outro exemplo de vida bem vivida
+					para o romano
+					m&eacute;dio da &eacute;poca de S&ecirc;neca.</p>
+				<p>6 &ndash; C&iacute;cero era muito vaidoso, chegou a escrever um poema &eacute;pico em louvor de seu
+					pr&oacute;prio
+					consulado. 7 &ndash; Tribuno da plebe em 91 a.C., considerado um g&ecirc;nio da pol&iacute;tica, foi
+					assassinado por
+					suas reformas democr&aacute;ticas. Da&iacute; teve in&iacute;cio a guerra social. (91 &ndash; 89
+					a.C.)</p>
+				<p>8 &ndash; A toga pretexta, com uma faixa p&uacute;rpura, era a vestimenta dos altos
+					funcion&aacute;rios e dos
+					generais. 9 &ndash; Pap&iacute;rio Fabiano foi mestre de S&ecirc;neca e o que mais o influenciou.
+				</p>
+				<p>10 &ndash; Nos leil&otilde;es e no tribunal dos cent&uacute;nviros, a lan&ccedil;a era colocada como
+					s&iacute;mbolo
+					do <em>iustum dominium</em>. A lan&ccedil;a assim fixada indicava que o tribunal estava sob a
+					autoridade do pretor.
+				</p>
+				<p>11 &ndash; Os bronzes cor&iacute;ntios eram muito cobi&ccedil;ados e colecionados por muitos em todo
+					o
+					imp&eacute;rio. 12 &ndash; Pe&ccedil;as naturalistas sobre os temas da vida comum. Algumas eram
+					pornogr&aacute;ficas.</p>
+				<p>13 &ndash; Para S&ecirc;neca, o &uacute;nico conhecimento v&aacute;lido &eacute; o da filosofia, cuja
+					finalidade
+					&eacute; o aperfei&ccedil;oamento moral do homem.</p>
+				<p>14 &ndash; Pompeu, O Grande, iria ser morto por um escravo ao desembarcar como fugitivo em
+					Alexandria. 15 &ndash; O
+					estudo da filosofia, que abrange tamb&eacute;m a f&iacute;sica e a teologia, pode levar o homem a
+					ter acesso
+					&aacute;</p>
+				<p>pr&oacute;pria eternidade.</p>
+				<p>16 &ndash; Desde Plat&atilde;o, &eacute; comum a cr&iacute;tica dos fil&oacute;sofos &agrave;s
+					fic&ccedil;&otilde;es
+					dos poetas.</p>
+				<p>17 &ndash; L&uacute;cio gaio M&aacute;rio (157 &ndash; 86 a.C.), general romano, foi o vencedor da
+					Jugurta.</p>
+				<p>18 &ndash; Cincinato (s&eacute;culo 4 a.C.) foi chamado do campo para ser ditador e salvar o
+					ex&eacute;rcito romano.
+					Cumprida a tarefa, voltou ao campo. Foi tido como modelo de virtude c&iacute;vica pelos romanos.</p>
+				<p>19 &ndash; Cipi&atilde;o Africano Maior (236 &ndash; 183 a.C.), comandante do ex&eacute;rcito romano
+					na Segunda
+					Guerra P&uacute;nica, terminou a guerra com a vit&oacute;ria de Zama.</p>
+				<p>20 &ndash; O t&iacute;tulo de Rex era abominado pelos romanos, que nunca esqueciam as atitudes
+					imorais e
+					irrespons&aacute;veis de seus &uacute;ltimos reis, os Tarqu&iacute;nios. Ot&aacute;vio, ao se tornar
+					imperador,
+					inventou um t&iacute;tulo novo e muito mais importante: o de Augusto.</p>
+				<p>21 &ndash; O estudo da filosofia, para os est&oacute;icos, abrange a f&iacute;sica, a l&oacute;gica e
+					a &eacute;tica.
+				</p>
+
+			</div>
+		</paginate-content>
+	</div>
+	<script type="module" src="https://cdn.jsdelivr.net/gh/sabia-publisher/paginar/dist/index.es.js"></script>
+
+</body>
+
+</html>
